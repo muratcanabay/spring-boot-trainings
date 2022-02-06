@@ -11,6 +11,7 @@
 
 	<modules>
 		<module>mongo-example</module>
+		<module>elasticsearch-example</module>
 	</modules>
 
 </project>
