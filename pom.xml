@@ -13,6 +13,7 @@
 		<module>mongo-example</module>
 		<module>elasticsearch-example</module>
         <module>postgresql-example</module>
-    </modules>
+		<module>swagger-example</module>
+	</modules>
 
 </project>

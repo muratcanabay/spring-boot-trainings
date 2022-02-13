@@ -1,12 +1,16 @@
 Addresses
 ---
-**mongodb**: localhost:27017
+**mongodb**: http://localhost:27017
 
-**elasticsearch**: localhost:9200
+**elasticsearch**: http://localhost:9200
 
-**postgresql**: localhost:5432
+**postgresql**: http://localhost:5432
 
-**postgresql adminer**: localhost:5433
+**postgresql adminer**: http://localhost:5433
+
+**swagger-ui**: http://localhost:8003/swagger-ui/index.html#/
+
+**swagger-api-doc**: http://localhost:8003/v2/api-docs
 
 Build Containers
 ---
