@@ -12,6 +12,7 @@
 	<modules>
 		<module>mongo-example</module>
 		<module>elasticsearch-example</module>
-	</modules>
+        <module>postgresql-example</module>
+    </modules>
 
 </project>

@@ -117,6 +117,62 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "postgresql",
+			"item": [
+				{
+					"name": "getAllUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8002/rest/api/v1/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"rest",
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"admin\",\r\n    \"password\": \"root\",\r\n    \"userType\": \"BASIC\",\r\n     \"orderList\": [\r\n        \"water\",\r\n        \"phone\"\r\n     ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8002/rest/api/v1/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"rest",
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
