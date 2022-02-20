@@ -12,6 +12,8 @@ Addresses
 
 **swagger-api-doc**: http://localhost:8003/v2/api-docs
 
+**rabbitmq-management-ui**: http://localhost:15672/
+
 Build Containers
 ---
 Run it in the directory where the docker-compose file is.
