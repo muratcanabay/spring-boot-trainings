@@ -173,6 +173,49 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "aop",
+			"item": [
+				{
+					"name": "welcome",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8005/welcome/muratcanabay",
+							"host": [
+								"localhost"
+							],
+							"port": "8005",
+							"path": [
+								"welcome",
+								"muratcanabay"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8005/welcome/error",
+							"host": [
+								"localhost"
+							],
+							"port": "8005",
+							"path": [
+								"welcome",
+								"error"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
