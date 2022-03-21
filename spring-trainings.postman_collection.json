@@ -216,6 +216,92 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "graphql",
+			"item": [
+				{
+					"name": "getById",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\r\n    getById(id: 2)\r\n  {\r\n    id,\r\n    description,\r\n    createdAt,\r\n  \tstatus\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8006/graphql/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8006",
+							"path": [
+								"graphql",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createInvoice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation{\r\n    createInvoice(\r\n        invoice: {\r\n            description: \"fastfood\",\r\n            status: \"INDIVIDUAL\"\r\n        })\r\n    {\r\n        id,\r\n        description,\r\n        createdAt,\r\n        status\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8006/graphql/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8006",
+							"path": [
+								"graphql",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getInvoiceByDescriptionLike",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\r\n    getInvoiceByDescriptionLike(description:\"fastfood\"){\r\n        id,\r\n        description,\r\n        createdAt,\r\n        status\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8006/graphql/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8006",
+							"path": [
+								"graphql",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

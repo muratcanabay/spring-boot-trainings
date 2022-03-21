@@ -16,6 +16,7 @@
 		<module>swagger-example</module>
         <module>rabbitmq-example</module>
         <module>aspect-oriented-programming-example</module>
+        <module>graphql-example</module>
     </modules>
 
 </project>

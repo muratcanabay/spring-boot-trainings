@@ -1,0 +1,24 @@
+# Return Object
+type Invoice {
+    id: ID!,
+    description: String,
+    createdAt: String,
+    status: String
+}
+
+# Input Object
+input InvoiceDto {
+    description: String!,
+    status: String
+}
+
+# Query Resolver Definition
+type Query {
+    getInvoiceByDescriptionLike(description: String): [Invoice],
+    getById(id: ID): Invoice
+}
+
+# Mutation Resolver Definition
+type Mutation {
+    createInvoice(invoice: InvoiceDto): Invoice
+}
