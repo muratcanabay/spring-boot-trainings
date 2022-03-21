@@ -14,6 +14,8 @@ Addresses
 
 **rabbitmq-management-ui**: http://localhost:15672/
 
+**graphiql editor**:http://localhost:8006/graphiql
+
 Build Containers
 ---
 Run it in the directory where the docker-compose file is.

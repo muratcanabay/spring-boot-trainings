@@ -1,7 +1,3 @@
-#### Graphiql Editor
-
-http://localhost:8006/graphiql
-
 #### Example Query
 
 ```graphql
