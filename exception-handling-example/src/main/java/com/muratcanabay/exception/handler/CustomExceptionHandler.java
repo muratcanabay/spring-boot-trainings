@@ -2,8 +2,10 @@ package com.muratcanabay.exception.handler;
 
 import com.muratcanabay.exception.UserNotFoundException;
 import com.muratcanabay.exception.response.ExceptionResponse;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
@@ -34,5 +36,17 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
                 .description(request.getDescription(false))
                 .build();
         return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+    }
+
+    @Override
+    protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
+        ExceptionResponse response = ExceptionResponse.builder()
+                .timestamp(new Date())
+                .message("Validation Error")
+                .description(
+                        ex.getBindingResult().getFieldError() != null ?
+                                ex.getBindingResult().getFieldError().getDefaultMessage() : String.valueOf(ex.getBindingResult()))
+                .build();
+        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
 }

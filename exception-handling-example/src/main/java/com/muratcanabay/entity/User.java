@@ -1,9 +1,11 @@
 package com.muratcanabay.entity;
 
 import lombok.*;
-import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Entity
@@ -20,10 +22,12 @@ public class User {
     private Long id;
 
     @Column(name = "username")
+    @NotNull(message = "Username field can not be empty!")
+    @Size(min = 4, max = 20, message = "Username field must be 4-20 characters long!")
     private String username;
 
-    @CreatedDate
     @Column(name = "created_at")
+    @Past(message = "Creation date cannot be later than current time!")
     private Date createdAt;
 
     @Enumerated(EnumType.STRING)
