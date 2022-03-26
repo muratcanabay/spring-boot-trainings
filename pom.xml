@@ -17,6 +17,7 @@
         <module>rabbitmq-example</module>
         <module>aspect-oriented-programming-example</module>
         <module>graphql-example</module>
+        <module>exception-handling-example</module>
     </modules>
 
 </project>
