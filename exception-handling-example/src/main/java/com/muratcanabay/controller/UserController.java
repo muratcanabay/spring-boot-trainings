@@ -11,6 +11,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import javax.validation.Valid;
 import java.net.URI;
 import java.util.Date;
+import java.util.List;
 
 
 @RestController
@@ -20,7 +21,7 @@ public class UserController {
 
     private final UserRepository userRepository;
 
-    @GetMapping("/user/{id}")
+    @GetMapping("/users/{id}")
     public ResponseEntity<User> findById(@PathVariable Long id) {
 
         User foundUser = userRepository.findById(id).orElseThrow(() -> {
@@ -29,7 +30,14 @@ public class UserController {
         return ResponseEntity.ok(foundUser);
     }
 
-    @PostMapping("/user")
+    @GetMapping("/users")
+    public ResponseEntity<List<User>> findAll() {
+
+        List<User> userList = userRepository.findAll();
+        return ResponseEntity.ok(userList);
+    }
+
+    @PostMapping("/users")
     public ResponseEntity<User> save(@Valid @RequestBody User user) {
 
         if (user.getCreatedAt() == null) user.setCreatedAt(new Date());
@@ -39,7 +47,7 @@ public class UserController {
         return ResponseEntity.created(uri).build();
     }
 
-    @DeleteMapping("/user/{id}")
+    @DeleteMapping("/users/{id}")
     public void delete(@PathVariable Long id) {
 
         User foundUser = userRepository.findById(id).orElseThrow(() -> {
