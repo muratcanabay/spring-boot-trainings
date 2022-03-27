@@ -307,6 +307,98 @@
 			"name": "exception-handling",
 			"item": [
 				{
+					"name": "validations",
+					"item": [
+						{
+							"name": "username length",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"Tes\",\r\n    \"status\": \"PASSIVE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8007/rest/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8007",
+									"path": [
+										"rest",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "username null",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\": \"PASSIVE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8007/rest/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8007",
+									"path": [
+										"rest",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createdAt future date",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"Test\",\r\n    \"createdAt\": \"2300-03-26T23:18:37.572+00:00\",\r\n    \"status\": \"PASSIVE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8007/rest/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8007",
+									"path": [
+										"rest",
+										"users"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
 					"name": "saveUser",
 					"request": {
 						"method": "POST",
@@ -321,7 +413,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8007/rest/user",
+							"raw": "http://localhost:8007/rest/users",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -329,7 +421,7 @@
 							"port": "8007",
 							"path": [
 								"rest",
-								"user"
+								"users"
 							]
 						}
 					},
@@ -350,7 +442,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8007/rest/user/1",
+							"raw": "http://localhost:8007/rest/users/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -358,7 +450,7 @@
 							"port": "8007",
 							"path": [
 								"rest",
-								"user",
+								"users",
 								"1"
 							]
 						}
@@ -383,7 +475,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8007/rest/user/1",
+							"raw": "http://localhost:8007/rest/users/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -391,8 +483,40 @@
 							"port": "8007",
 							"path": [
 								"rest",
-								"user",
+								"users",
 								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8007/rest/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8007",
+							"path": [
+								"rest",
+								"users"
 							]
 						}
 					},
