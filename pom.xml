@@ -18,6 +18,7 @@
         <module>aspect-oriented-programming-example</module>
         <module>graphql-example</module>
         <module>exception-handling-example</module>
+        <module>hateoas-example</module>
     </modules>
 
 </project>

@@ -523,6 +523,73 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "hateoas",
+			"item": [
+				{
+					"name": "findByUserId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8008/rest/users-hateoas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"rest",
+								"users-hateoas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Test\",\r\n    \"status\": \"PASSIVE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8008/rest/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"rest",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
