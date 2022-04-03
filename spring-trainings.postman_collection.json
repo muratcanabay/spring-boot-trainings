@@ -709,6 +709,49 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "filtering",
+			"item": [
+				{
+					"name": "dynamic-filtering",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8010/dynamic-filtering",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8010",
+							"path": [
+								"dynamic-filtering"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "static-filtering",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8010/static-filtering",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8010",
+							"path": [
+								"static-filtering"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
