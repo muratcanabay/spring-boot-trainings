@@ -20,6 +20,7 @@
         <module>exception-handling-example</module>
         <module>hateoas-example</module>
 		<module>i18n-example</module>
+		<module>filtering-api-response-example</module>
 	</modules>
 
 </project>
