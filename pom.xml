@@ -19,6 +19,7 @@
         <module>graphql-example</module>
         <module>exception-handling-example</module>
         <module>hateoas-example</module>
-    </modules>
+		<module>i18n-example</module>
+	</modules>
 
 </project>
