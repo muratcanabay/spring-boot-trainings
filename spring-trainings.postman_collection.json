@@ -590,6 +590,55 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "i18n",
+			"item": [
+				{
+					"name": "Hello World Default",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8009/hello-world",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8009",
+							"path": [
+								"hello-world"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hello World Tr",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "tr",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8009/hello-world",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8009",
+							"path": [
+								"hello-world"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
