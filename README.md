@@ -8,13 +8,17 @@ Addresses
 
 **postgresql adminer**: http://localhost:5433
 
-**swagger-ui**: http://localhost:8003/swagger-ui/index.html#/
+**swagger-ui 2 spring-fox**: http://localhost:8003/swagger-ui/index.html#/
 
-**swagger-api-doc**: http://localhost:8003/v2/api-docs
+**swagger2-api-doc**: http://localhost:8003/v2/api-docs
 
 **rabbitmq-management-ui**: http://localhost:15672/
 
 **graphiql editor**:http://localhost:8006/graphiql
+
+**swagger-ui 3 spring-doc**:http://localhost:8008/swagger-ui/index.html#/
+
+**swagger3-api-doc**: http://localhost:8008/v3/api-docs
 
 Build Containers
 ---
