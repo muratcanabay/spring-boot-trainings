@@ -752,6 +752,221 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "api-versioning",
+			"item": [
+				{
+					"name": "URI-versioning",
+					"item": [
+						{
+							"name": "v1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8011/v1/uri-versioning",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8011",
+									"path": [
+										"v1",
+										"uri-versioning"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8011/v2/uri-versioning",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8011",
+									"path": [
+										"v2",
+										"uri-versioning"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Request-Param",
+					"item": [
+						{
+							"name": "v1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8011/model?version=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8011",
+									"path": [
+										"model"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8011/model?version=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8011",
+									"path": [
+										"model"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Request-Header",
+					"item": [
+						{
+							"name": "v1",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-API-Version",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8011/model",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8011",
+									"path": [
+										"model"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v2",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-API-Version",
+										"value": "2",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8011/model",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8011",
+									"path": [
+										"model"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Accept-Header",
+					"item": [
+						{
+							"name": "v1",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.muratcanabay.app-v1+json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8011/model",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8011",
+									"path": [
+										"model"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v2",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.muratcanabay.app-v2+json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8011/model",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8011",
+									"path": [
+										"model"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
 		}
 	]
 }
