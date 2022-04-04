@@ -22,6 +22,7 @@
 		<module>i18n-example</module>
 		<module>filtering-api-response-example</module>
         <module>versioning-api-example</module>
-    </modules>
+		<module>rest-client-example</module>
+	</modules>
 
 </project>
