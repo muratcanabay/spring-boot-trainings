@@ -21,6 +21,7 @@
         <module>hateoas-example</module>
 		<module>i18n-example</module>
 		<module>filtering-api-response-example</module>
-	</modules>
+        <module>versioning-api-example</module>
+    </modules>
 
 </project>
