@@ -12,7 +12,7 @@
 
     <groupId>com.muratcanabay</groupId>
     <version>0.0.1-SNAPSHOT</version>
-    <artifactId>aop-example</artifactId>
+    <artifactId>aspect-oriented-programming-example</artifactId>
     <name>AOP Application</name>
 
     <properties>

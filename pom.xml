@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.muratcanabay</groupId>
-	<artifactId>spring-boot-app</artifactId>
+	<artifactId>spring-boot-trainings</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Spring Boot Training Application Parent</name>
